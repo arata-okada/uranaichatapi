@@ -13,4 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/divinerlists','DivinerlistsController@get');
+Route::post('/register', 'RegisterController@post');
+Route::post('/login', 'LoginController@post');
+Route::get('/user', 'UserController@get');
+Route::get('/divinerlists', 'DivinerlistsController@get');
